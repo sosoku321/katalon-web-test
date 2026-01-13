@@ -23,7 +23,7 @@ WebUI.navigateToUrl('https://dev.itmarket.co.kr/')
 
 WebUI.verifyTextPresent('IT 프로젝트를 쉽고 빠르게', true)
 
-WebUI.verifyTextPresent('IT마켓에서 시작하세요.', true)
+WebUI.verifyTextPresent('IT마켓에서 시작하세요.123', true)
 
 WebUI.closeBrowser()
 
