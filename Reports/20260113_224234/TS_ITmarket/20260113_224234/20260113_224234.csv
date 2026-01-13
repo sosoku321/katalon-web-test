@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_ITmarket,Chrome 144.0.7559.59,,,13-01-2026 22:42:37,13-01-2026 22:42:44,"7,566s",PASSED
+,,,,,,,
+Test Cases/it-market/homepage_UI,Chrome 144.0.7559.59,,,13-01-2026 22:42:37,13-01-2026 22:42:42,"4,265s",PASSED
+"openBrowser("""")",Chrome 144.0.7559.59,,,13-01-2026 22:42:37,13-01-2026 22:42:39,"1,696s",PASSED
+"navigateToUrl(""https://dev.itmarket.co.kr/"")",Chrome 144.0.7559.59,,,13-01-2026 22:42:39,13-01-2026 22:42:40,"1,160s",PASSED
+"verifyTextPresent(""IT 프로젝트를 쉽고 빠르게"", true)",Chrome 144.0.7559.59,,,13-01-2026 22:42:40,13-01-2026 22:42:41,"0,763s",PASSED
+"verifyTextPresent(""IT마켓에서 시작하세요."", true)",Chrome 144.0.7559.59,,,13-01-2026 22:42:41,13-01-2026 22:42:41,"0,253s",PASSED
+closeBrowser(),Chrome 144.0.7559.59,,,13-01-2026 22:42:41,13-01-2026 22:42:42,"0,149s",PASSED
+,,,,,,,
+Test Cases/it-market/loginpage_UI,Chrome 144.0.7559.59,,,13-01-2026 22:42:42,13-01-2026 22:42:44,"2,905s",PASSED
+"openBrowser("""")",Chrome 144.0.7559.59,,,13-01-2026 22:42:42,13-01-2026 22:42:42,"0,783s",PASSED
+"navigateToUrl(""https://dev.itmarket.co.kr/login"")",Chrome 144.0.7559.59,,,13-01-2026 22:42:42,13-01-2026 22:42:43,"1,115s",PASSED
+"verifyTextPresent(""아직 아이티마켓 회원이 아니신가요?"", true)",Chrome 144.0.7559.59,,,13-01-2026 22:42:43,13-01-2026 22:42:44,"0,830s",PASSED
+closeBrowser(),Chrome 144.0.7559.59,,,13-01-2026 22:42:44,13-01-2026 22:42:44,"0,119s",PASSED

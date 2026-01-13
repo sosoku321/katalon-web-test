@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_WordWizards,Chrome 144.0.7559.59,,,11-01-2026 23:08:22,11-01-2026 23:08:29,"7,102s",PASSED
+,,,,,,,
+Test Cases/Word-Wizards/Home Page UI,Chrome 144.0.7559.59,,,11-01-2026 23:08:22,11-01-2026 23:08:26,"4,256s",PASSED
+"openBrowser("""")",Chrome 144.0.7559.59,,,11-01-2026 23:08:22,11-01-2026 23:08:24,"1,768s",PASSED
+"navigateToUrl(""http://localhost:8081/"")",Chrome 144.0.7559.59,,,11-01-2026 23:08:24,11-01-2026 23:08:26,"1,374s",PASSED
+"verifyTextPresent(""Explore Learning Tools And Resources"", true)",Chrome 144.0.7559.59,,,11-01-2026 23:08:26,11-01-2026 23:08:26,"0,394s",PASSED
+"verifyTextPresent(""Grammar & Writing"", false)",Chrome 144.0.7559.59,,,11-01-2026 23:08:26,11-01-2026 23:08:26,"0,250s",PASSED
+closeBrowser(),Chrome 144.0.7559.59,,,11-01-2026 23:08:26,11-01-2026 23:08:26,"0,180s",PASSED
+,,,,,,,
+Test Cases/Word-Wizards/Word Chain Game UI,Chrome 144.0.7559.59,,,11-01-2026 23:08:26,11-01-2026 23:08:29,"2,378s",PASSED
+"openBrowser("""")",Chrome 144.0.7559.59,,,11-01-2026 23:08:26,11-01-2026 23:08:27,"0,811s",PASSED
+"navigateToUrl(""http://localhost:8081/word-chain-game"")",Chrome 144.0.7559.59,,,11-01-2026 23:08:27,11-01-2026 23:08:28,"1,006s",PASSED
+"verifyTextPresent(""Game Rules"", true)",Chrome 144.0.7559.59,,,11-01-2026 23:08:28,11-01-2026 23:08:29,"0,371s",PASSED
+closeBrowser(),Chrome 144.0.7559.59,,,11-01-2026 23:08:29,11-01-2026 23:08:29,"0,143s",PASSED

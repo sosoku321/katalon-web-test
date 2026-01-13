@@ -1,0 +1,78 @@
+2026-01-02 22:20:07.096 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\nguye\.katalon\packages\KSE-10.4.2\configuration\org.eclipse.osgi\132\0\.cp\resources\logback\logback-execution.xml
+2026-01-02 22:20:07.099 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\nguye\Katalon Studio\katalon-web-test\Include\config\log.properties
+2026-01-02 22:20:07.644 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/TS_Login_Verification
+2026-01-02 22:20:07.724 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = phuc huy
+2026-01-02 22:20:07.724 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = katalon-web-test
+2026-01-02 22:20:07.725 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = nguye - Yen
+2026-01-02 22:20:07.725 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-01-02 22:20:07.725 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 169.254.13.160
+2026-01-02 22:20:07.726 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.4.2.0
+2026-01-02 22:20:08.120 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-02 22:20:08.120 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_Login_DDT
+2026-01-02 22:20:08.140 INFO  c.k.katalon.core.main.TestCaseExecutor   - username_var = John Doe
+2026-01-02 22:20:08.141 INFO  c.k.katalon.core.main.TestCaseExecutor   - password_var = ThisIsNotAPassword
+2026-01-02 22:20:08.395 DEBUG testcase.TC_Login_DDT                    - 1: openBrowser("")
+2026-01-02 22:20:08.604 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-02 22:20:08.658 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+thg 1 02, 2026 10:20:09 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+thg 1 02, 2026 10:20:09 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 143.0.7499.170. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-01-02 22:20:10.425 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 657f30991b1bd0f68039a75a4e1c6124
+2026-01-02 22:20:10.426 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.170
+2026-01-02 22:20:10.427 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-01-02 22:20:10.427 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.34.0
+2026-01-02 22:20:10.435 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-02 22:20:10.479 DEBUG testcase.TC_Login_DDT                    - 2: navigateToUrl("https://katalon-demo-cura.herokuapp.com/profile.php#login")
+2026-01-02 22:20:13.241 DEBUG testcase.TC_Login_DDT                    - 3: setText(findTestObject("Object Repository/Page_CURA Healthcare Service/input_Username_txt-username"), username_var)
+2026-01-02 22:20:14.060 DEBUG testcase.TC_Login_DDT                    - 4: setText(findTestObject("Object Repository/Page_CURA Healthcare Service/input_Password_txt-password"), password_var)
+2026-01-02 22:20:14.682 DEBUG testcase.TC_Login_DDT                    - 5: click(findTestObject("Object Repository/Page_CURA Healthcare Service/button_Login"))
+2026-01-02 22:20:16.042 DEBUG testcase.TC_Login_DDT                    - 6: closeBrowser()
+2026-01-02 22:20:16.262 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_Login_DDT
+2026-01-02 22:20:16.275 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-02 22:20:16.275 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_Login_DDT
+2026-01-02 22:20:16.281 INFO  c.k.katalon.core.main.TestCaseExecutor   - username_var = John Doe
+2026-01-02 22:20:16.282 INFO  c.k.katalon.core.main.TestCaseExecutor   - password_var = WrongPass123
+2026-01-02 22:20:16.283 DEBUG testcase.TC_Login_DDT                    - 1: openBrowser("")
+2026-01-02 22:20:16.285 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-02 22:20:16.286 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+thg 1 02, 2026 10:20:16 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+thg 1 02, 2026 10:20:16 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 143.0.7499.170. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-01-02 22:20:17.024 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = cf1b25531b93282fd06a959d38af4739
+2026-01-02 22:20:17.025 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.170
+2026-01-02 22:20:17.025 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-01-02 22:20:17.025 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.34.0
+2026-01-02 22:20:17.027 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-02 22:20:17.041 DEBUG testcase.TC_Login_DDT                    - 2: navigateToUrl("https://katalon-demo-cura.herokuapp.com/profile.php#login")
+2026-01-02 22:20:19.599 DEBUG testcase.TC_Login_DDT                    - 3: setText(findTestObject("Object Repository/Page_CURA Healthcare Service/input_Username_txt-username"), username_var)
+2026-01-02 22:20:20.242 DEBUG testcase.TC_Login_DDT                    - 4: setText(findTestObject("Object Repository/Page_CURA Healthcare Service/input_Password_txt-password"), password_var)
+2026-01-02 22:20:20.863 DEBUG testcase.TC_Login_DDT                    - 5: click(findTestObject("Object Repository/Page_CURA Healthcare Service/button_Login"))
+2026-01-02 22:20:21.700 DEBUG testcase.TC_Login_DDT                    - 6: closeBrowser()
+2026-01-02 22:20:21.849 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_Login_DDT
+2026-01-02 22:20:21.851 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-02 22:20:21.852 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/TC_Login_DDT
+2026-01-02 22:20:21.866 INFO  c.k.katalon.core.main.TestCaseExecutor   - (Default) username_var = 
+2026-01-02 22:20:21.866 INFO  c.k.katalon.core.main.TestCaseExecutor   - password_var = ThisIsNotAPassword
+2026-01-02 22:20:21.867 DEBUG testcase.TC_Login_DDT                    - 1: openBrowser("")
+2026-01-02 22:20:21.869 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-02 22:20:21.870 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+thg 1 02, 2026 10:20:22 CH org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+thg 1 02, 2026 10:20:22 CH org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+WARNING: Unable to find version of CDP to use for 143.0.7499.170. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.34.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-01-02 22:20:22.580 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 4b5e68f0c398dc6d19aad1bd5c0d3a8a
+2026-01-02 22:20:22.580 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.170
+2026-01-02 22:20:22.581 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-01-02 22:20:22.581 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.34.0
+2026-01-02 22:20:22.581 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-02 22:20:22.596 DEBUG testcase.TC_Login_DDT                    - 2: navigateToUrl("https://katalon-demo-cura.herokuapp.com/profile.php#login")
+2026-01-02 22:20:25.160 DEBUG testcase.TC_Login_DDT                    - 3: setText(findTestObject("Object Repository/Page_CURA Healthcare Service/input_Username_txt-username"), username_var)
+2026-01-02 22:20:25.803 DEBUG testcase.TC_Login_DDT                    - 4: setText(findTestObject("Object Repository/Page_CURA Healthcare Service/input_Password_txt-password"), password_var)
+2026-01-02 22:20:26.410 DEBUG testcase.TC_Login_DDT                    - 5: click(findTestObject("Object Repository/Page_CURA Healthcare Service/button_Login"))
+2026-01-02 22:20:27.257 DEBUG testcase.TC_Login_DDT                    - 6: closeBrowser()
+2026-01-02 22:20:27.406 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/TC_Login_DDT
+2026-01-02 22:20:27.431 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-01-02 22:20:27.431 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/TS_Login_Verification
+2026-01-02 22:20:27.431 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

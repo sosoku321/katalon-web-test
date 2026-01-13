@@ -1,0 +1,23 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Login_Verification,Chrome 143.0.7499.170,,,02-01-2026 22:04:57,02-01-2026 22:06:01,"1m - 3,725s",FAILED
+,,,,,,,
+Test Cases/TC_Login_DDT,Chrome 143.0.7499.170,,,02-01-2026 22:05:15,02-01-2026 22:05:19,"4,309s",FAILED
+"DATA BINDING - {""password_var"":""ThisIsNotAPassword"",""username_var"":""John Doe""}",,,,,,,
+"openBrowser("""")",Chrome 143.0.7499.170,,,02-01-2026 22:05:15,02-01-2026 22:05:16,"0,903s",PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/profile.php#login"")",Chrome 143.0.7499.170,,,02-01-2026 22:05:16,02-01-2026 22:05:18,"2,582s",PASSED
+"setText(findTestObject(""Object Repository/Page_CURA Healthcare Service/input_Username_txt-username""), username_var)",Chrome 143.0.7499.170,,,02-01-2026 22:05:18,02-01-2026 22:05:19,"0,666s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_CURA Healthcare Service/input_Password_txt-password""), password_var)",Chrome 143.0.7499.170,,,02-01-2026 22:05:19,02-01-2026 22:05:19,"0,144s",FAILED
+,,,,,,,
+Test Cases/TC_Login_DDT,Chrome 143.0.7499.170,,,02-01-2026 22:05:35,02-01-2026 22:05:39,"4,515s",FAILED
+"DATA BINDING - {""password_var"":""WrongPass123"",""username_var"":""John Doe""}",,,,,,,
+"openBrowser("""")",Chrome 143.0.7499.170,,,02-01-2026 22:05:35,02-01-2026 22:05:36,"0,865s",PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/profile.php#login"")",Chrome 143.0.7499.170,,,02-01-2026 22:05:36,02-01-2026 22:05:39,"2,863s",PASSED
+"setText(findTestObject(""Object Repository/Page_CURA Healthcare Service/input_Username_txt-username""), username_var)",Chrome 143.0.7499.170,,,02-01-2026 22:05:39,02-01-2026 22:05:39,"0,619s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_CURA Healthcare Service/input_Password_txt-password""), password_var)",Chrome 143.0.7499.170,,,02-01-2026 22:05:39,02-01-2026 22:05:39,"0,155s",FAILED
+,,,,,,,
+Test Cases/TC_Login_DDT,Chrome 143.0.7499.170,,,02-01-2026 22:05:55,02-01-2026 22:06:00,"4,796s",FAILED
+"DATA BINDING - {""(Default) usern..."":"""",""password_var"":""ThisIsNotAPassword""}",,,,,,,
+"openBrowser("""")",Chrome 143.0.7499.170,,,02-01-2026 22:05:55,02-01-2026 22:05:56,"1,029s",PASSED
+"navigateToUrl(""https://katalon-demo-cura.herokuapp.com/profile.php#login"")",Chrome 143.0.7499.170,,,02-01-2026 22:05:56,02-01-2026 22:05:59,"2,724s",PASSED
+"setText(findTestObject(""Object Repository/Page_CURA Healthcare Service/input_Username_txt-username""), username_var)",Chrome 143.0.7499.170,,,02-01-2026 22:05:59,02-01-2026 22:06:00,"0,794s",PASSED
+"setEncryptedText(findTestObject(""Object Repository/Page_CURA Healthcare Service/input_Password_txt-password""), password_var)",Chrome 143.0.7499.170,,,02-01-2026 22:06:00,02-01-2026 22:06:00,"0,238s",FAILED

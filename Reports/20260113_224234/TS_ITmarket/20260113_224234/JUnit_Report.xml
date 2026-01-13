@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_ITmarket" time="7.535" tests="2" failures="0" errors="0">
+   <testsuite name="TS_ITmarket" tests="2" failures="0" errors="0" time="7.535" skipped="0" timestamp="2026-01-13T15:42:37.395Z" hostname="nguye - Yen" id="Test Suites/TS_ITmarket">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\nguye\\Katalon Studio\\katalon-web-test\\Reports\\20260113_224234\\TS_ITmarket\\20260113_224234"/>
+         <property name="logFiles" value="C:\\Users\\nguye\\Katalon Studio\\katalon-web-test\\Reports\\20260113_224234\\TS_ITmarket\\20260113_224234\\console0.log, C:\\Users\\nguye\\Katalon Studio\\katalon-web-test\\Reports\\20260113_224234\\TS_ITmarket\\20260113_224234\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="nguye - Yen"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="10.4.2.0"/>
+         <property name="browser" value="Chrome 144.0.7559.59"/>
+         <property name="userFullName" value="phuc huy"/>
+         <property name="hostAddress" value="169.254.13.160"/>
+         <property name="sessionId" value="8bb5716256346f648c7bb7865b8648bb"/>
+         <property name="projectName" value="katalon-web-test"/>
+         <property name="seleniumVersion" value="4.34.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/it-market/homepage_UI" time="4.265" classname="Test Cases/it-market/homepage_UI" status="PASSED">
+         <system-out><![CDATA[13-01-2026T22:42:37 - [TEST_CASE][PASSED] - Test Cases/it-market/homepage_UI: Test Cases/it-market/homepage_UI
+
+13-01-2026T22:42:37 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-01-2026T22:42:38 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-01-2026T22:42:38 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-01-2026T22:42:39 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-01-2026T22:42:39 - [TEST_STEP][PASSED] - navigateToUrl("https://dev.itmarket.co.kr/"): Navigate to 'https://dev.itmarket.co.kr/' successfully
+
+13-01-2026T22:42:40 - [MESSAGE][PASSED] - Navigate to 'https://dev.itmarket.co.kr/' successfully
+
+13-01-2026T22:42:40 - [TEST_STEP][PASSED] - verifyTextPresent("IT 프로젝트를 쉽고 빠르게", true): Text 'IT 프로젝트를 쉽고 빠르게' is present on page  using regular expression
+
+13-01-2026T22:42:41 - [MESSAGE][PASSED] - Text 'IT 프로젝트를 쉽고 빠르게' is present on page  using regular expression
+
+13-01-2026T22:42:41 - [TEST_STEP][PASSED] - verifyTextPresent("IT마켓에서 시작하세요.", true): Text 'IT마켓에서 시작하세요.' is present on page  using regular expression
+
+13-01-2026T22:42:41 - [MESSAGE][PASSED] - Text 'IT마켓에서 시작하세요.' is present on page  using regular expression
+
+13-01-2026T22:42:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-01-2026T22:42:42 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/it-market/loginpage_UI" time="2.905" classname="Test Cases/it-market/loginpage_UI" status="PASSED">
+         <system-out><![CDATA[13-01-2026T22:42:42 - [TEST_CASE][PASSED] - Test Cases/it-market/loginpage_UI: Test Cases/it-market/loginpage_UI
+
+13-01-2026T22:42:42 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+13-01-2026T22:42:42 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+13-01-2026T22:42:42 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+13-01-2026T22:42:42 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+13-01-2026T22:42:42 - [TEST_STEP][PASSED] - navigateToUrl("https://dev.itmarket.co.kr/login"): Navigate to 'https://dev.itmarket.co.kr/login' successfully
+
+13-01-2026T22:42:43 - [MESSAGE][PASSED] - Navigate to 'https://dev.itmarket.co.kr/login' successfully
+
+13-01-2026T22:42:43 - [TEST_STEP][PASSED] - verifyTextPresent("아직 아이티마켓 회원이 아니신가요?", true): Text '아직 아이티마켓 회원이 아니신가요?' is present on page  using regular expression
+
+13-01-2026T22:42:44 - [MESSAGE][PASSED] - Text '아직 아이티마켓 회원이 아니신가요?' is present on page  using regular expression
+
+13-01-2026T22:42:44 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+13-01-2026T22:42:44 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[13-01-2026T22:42:37 - [TEST_SUITE][PASSED] - TS_ITmarket: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
