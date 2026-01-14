@@ -1,3 +1,0 @@
-{"testCaseName":"Test Cases/TC_Login_DDT","testCaseId":"Test Cases/TC_Login_DDT","iterationVariableName":"","bindedValues":{"password_var":"\u0027ThisIsNotAPassword\u0027","username_var":"\u0027John Doe\u0027"}}
-{"testCaseName":"Test Cases/TC_Login_DDT","testCaseId":"Test Cases/TC_Login_DDT","iterationVariableName":"","bindedValues":{"password_var":"\u0027WrongPass123\u0027","username_var":"\u0027John Doe\u0027"}}
-{"testCaseName":"Test Cases/TC_Login_DDT","testCaseId":"Test Cases/TC_Login_DDT","iterationVariableName":"","bindedValues":{"password_var":"\u0027ThisIsNotAPassword\u0027"}}
