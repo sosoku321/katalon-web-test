@@ -238,5 +238,6 @@
 	<classpathentry kind="lib" path="C:/Users/nguye/.katalon/packages/KSE-10.4.2/plugins/org.testng_7.8.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/nguye/.katalon/packages/KSE-10.4.2/plugins/com.beust.jcommander_1.82.0.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1763,7 +1763,6 @@ curl \
   <nestedLevel>0</nestedLevel>
   <escapedJava>false</escapedJava>
 </record>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE log SYSTEM "logger.dtd">
 <record>
   <date>2026-01-11T15:58:06.472380800Z</date>
