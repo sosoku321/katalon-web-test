@@ -1,0 +1,71 @@
+import { test, expect } from '@playwright/test';
+import { LoginPage } from '../pages/login.page'; // Import class vừa tạo
+
+// Bỏ 'request' ở tham số đầu vào đi
+test('Create items for all categories via API', async ({ page }) => {
+    // 1. Khai báo danh sách categories từ dữ liệu bạn có
+    // const categories = [
+    //     { id: "ff19dc9f-85be-493e-8540-3435899ba069", name: "방적사" },
+    //     { id: "a599fa85-a322-4790-9c05-79bf443835dc", name: "DTY(포리)" },
+    //     { id: "6a709279-cb68-4a81-b1e6-8245728d6ac9", name: "스판" },
+    //     { id: "580ec115-862d-4124-be74-d6937c9b4d10", name: "기타" }
+    // ];
+
+    // Đăng nhập UI để lấy token/session
+    const loginPage = new LoginPage(page);
+    await loginPage.goto();
+    await loginPage.login('admin@erp.com', 'Admin@2025');
+    await page.waitForURL('**/admin/**');
+
+    // Lấy token từ cookies (như đã phân tích trước đó)
+    const cookies = await page.context().cookies();
+    const tokenValue = cookies.find(c => c.name === 'token')?.value || '';
+
+    // 2. Tự động gọi API GET để lấy danh sách Category mới nhất
+    const catResponse = await page.request.get('https://dev.fabric365.co.kr/erpdev/api/category', {
+        headers: {
+            'authorization': `Bearer ${tokenValue}`,
+            'cookie': `token=${tokenValue}`, // Truyền thêm cookie nếu server yêu cầu kép
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
+        },
+    });
+    const catData = await catResponse.json();
+    const categories = catData.data; // Đây chính là mảng 4 cái bạn vừa thấy
+
+    // 2. VÒNG LẶP TẠO ITEM
+    for (const cat of categories) {
+        const itemName = `Auto Item - ${cat.name} - ${Date.now()}`; // Tên item phân biệt theo category
+
+        console.log(`Đang tạo item cho category: ${cat.name}`);
+
+        const response = await page.request.post('https://dev.fabric365.co.kr/erpdev/api/yarn', {
+            headers: {
+                'authorization': `Bearer ${tokenValue}`,
+                'cookie': `token=${tokenValue}`, // Truyền thêm cookie nếu server yêu cầu kép
+                'content-type': 'application/json',
+                'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
+            },
+            data: {
+                "category": {
+                    "id": cat.id,
+                    "name": cat.name
+                },
+                "name": itemName,
+                "color": "Default Color",
+                "note": "Created by Playwright Loop"
+            }
+        });
+
+        expect(response.ok(), `Lỗi khi tạo item cho ${cat.name}`).toBeTruthy();
+    }
+
+    // 3. KIỂM TRA TRÊN UI (Sau khi tạo xong cả 4 cái)
+    await page.goto('https://dev.fabric365.co.kr/admin/yarn-code');
+    await page.reload(); // Refresh để cập nhật danh sách mới nhất
+
+    for (const cat of categories) {
+        const itemName = `Auto Item - ${cat.name}`;
+        // Kiểm tra xem tên item có xuất hiện trên màn hình không
+        await expect(page.getByText(itemName)).toBeVisible();
+    }
+});
